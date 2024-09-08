@@ -1450,11 +1450,11 @@ table {
     border-left: 0;
     border-right: 0; }
     table tbody tr:nth-child(2n + 1) {
-      background-color: rgba(230, 235, 237, 0.25); }
+      background-color: black; }
   table td {
     padding: 0.75em 0.75em; }
   table th {
-    color: #3d4449;
+    color: white;
     font-size: 0.9em;
     font-weight: 600;
     padding: 0 0.75em 0.75em 0.75em;
