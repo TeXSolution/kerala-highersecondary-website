@@ -91,10 +91,11 @@ body {
 
 /* Type */
 body, input, select, textarea {
-  color: #7f888f;
-  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-family: "Latin Modern Math", serif;
   font-size: 13pt;
   font-weight: 400;
+  background-color: black;
   line-height: 1.65; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
@@ -131,7 +132,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #3d4449;
+  color: rgb(240, 157, 185);
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -994,8 +995,7 @@ header p {
   font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.075em;
-  margin-top: -0.5em;
-  text-transform: uppercase; }
+  margin-top: -0.5em;}
 
 header.major > :last-child {
   border-bottom: solid 3px #f56a6a;
@@ -1011,7 +1011,7 @@ form {
   margin: 0 0 2em 0; }
 
 label {
-  color: #3d4449;
+  color: black;
   display: block;
   font-size: 0.9em;
   font-weight: 600;
@@ -1102,7 +1102,7 @@ input[type="radio"] {
   input[type="checkbox"] + label,
   input[type="radio"] + label {
     text-decoration: none;
-    color: #7f888f;
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
@@ -1899,7 +1899,7 @@ button,
     -webkit-transform: scaleX(-1);
     -ms-transform: scaleX(-1);
     transform: scaleX(-1);
-    color: #7f888f;
+    color: black;
     content: '\f002';
     cursor: default;
     display: block;
@@ -2054,7 +2054,7 @@ button,
       text-indent: 7.25em;
       width: 7.25em; }
       #sidebar .toggle:before {
-        color: #7f888f;
+        color: black;
         margin-left: -0.0625em;
         margin-top: -0.25em;
         font-size: 1.1rem;
@@ -2198,7 +2198,7 @@ button,
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  color: #3d4449;
+  color: black;
   font-family: "Roboto Slab", serif;
   font-weight: 400;
   letter-spacing: 0.075em;
