@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Generic - Editorial by HTML5 UP</title>
+		<title>TeXSolutions</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -22,7 +23,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>Mathematics</strong> Chapters</a>
+									<a href="../../index.html" class="logo"><strong>TeX</strong>Solutions</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -35,7 +36,7 @@
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Mathematics chapter wise questions and solutions</h1>
+										<h1>Chapter 6 Application of Derivatives</h1>
 									</header>
 
 									<!-- <span class="image main"><img src="images/pic11.jpg" alt="" /></span>
@@ -46,31 +47,155 @@
 
 									<hr class="major" /> -->
 
-<h2><a href="mathematics/plustwo/1Relations_and_Functions.html" class="logo">(1) Relations and Functions</a></h2>
+<h2>Question 1</h2>
+<p>Find the rate of change of the area of a circle with respect to its radius r where r = 4 cm.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	A&=\pi r^2\\[4pt]
+	\frac{dA}{dr}&=\frac{d}{dr}\pi r^2\\[4pt]
+	&=\pi \frac{d}{dr}r^2\\[4pt]
+	&=\pi 2r\\[4pt]
+	\left.\frac{dA}{dr}\right\vert_{r=4cm}&=\pi\times2\times4\\[4pt]
+	&=\underline{\underline{8\pi\, \mathrm{cm}^2/\mathrm{cm}}}
+	\end{align}$$</p>    
 <hr class="major" />
-<h2><a href="mathematics/plustwo/2Inverse_Trigonometric_Functions.html" class="logo">(2) Inverse Trigonometric Functions</a></h2>
-<hr class="major" />
-<h2><a href="mathematics/plustwo/3Matrices.html" class="logo">(3) Matrices</a></h2>
-<hr class="major" />
-<h2>(4) Determinants</h2> 
-<hr class="major" />
-<h2>(5) Continuity and Differentiability</h2> 
-<hr class="major" />
-<h2><a href="mathematics/plustwo/6Application_of_Derivatives.html" class="logo">(6) Application of Derivatives</a></h2>
-<hr class="major" />
-<h2>(7) Integrals</h2> 
-<hr class="major" />
-<h2>(8) Application of Integrals</h2>
-<hr class="major" />
-<h2>(9) Differential Equations</h2>
-<hr class="major" />
-<h2>(10) Vector Algebra</h2>
-<hr class="major" />
-<h2>(11) Three-dimensional Geometry</h2> 
-<hr class="major" />
-<h2>(12) Linear Programming</h2>
 
-</section>
+<h2>Question 2</h2>
+<p>A sphere has a variable radius. Find the rate at which its volume is increasing with the radius when the radius is 10 cm.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	V&=\frac{4}{3}\pi r^3\\[4pt]
+	\frac{dv}{dr}&=\frac{4}{\cancel{3}}\pi\times \cancel{3}r^2\\[4pt]
+	&=4\pi r^2\\[4pt]
+	\left.\frac{dV}{dr}\right\vert_{r=10cm}&=4\times\pi\times10^2\\[4pt]
+	&=\underline{\underline{400\pi\, \mathrm{cm}^3/\mathrm{cm}}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 3</h2>
+<p>The radius of a circle is increasing uniformly at the rate of 6 cm/s. Find the rate at which the area of the circle is increasing when the radius is 10 cm.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\frac{dr}{dt}&=+6\,\mathrm{cm}/\mathrm{s}\\[4pt]
+	A&=\pi r^2\\[4pt]
+	\frac{dA}{dt}&=\frac{d}{dt}\pi r^2\\[4pt]
+	&=\pi\frac{d}{dt} r^2\\[4pt]
+	&=\pi2r\frac{dr}{dt}\\[4pt]
+	&=2\pi r\times 6\\[4pt]
+	&=12\pi r\\[4pt]
+	\left.\frac{dA}{dt}\right\vert_{r=10cm}&=12\pi \times 10\\[4pt]
+	&=\underline{\underline{120\pi\,\mathrm{cm}^2/\mathrm{s}}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 4</h2>
+<p>An edge of a cube is increasing at the rate of 4 cm/s. How fast is the volume increasing when the edge is 10 cm?</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\frac{dx}{dt}&=+4\,\mathrm{cm}/\mathrm{s}\\[4pt]
+	V&=x^3\\[4pt]
+	\frac{dV}{dt}&=\frac{d}{dt} x^3\\[4pt]
+	&=3x^2\frac{dx}{dt}\\[4pt]
+	&=3x^2\times 4\\[4pt]
+	&=12x^2\\[4pt]
+	\left.\frac{dV}{dt}\right\vert_{x=10cm}&=12\times 10^2\\[4pt]
+	&=\underline{\underline{1200\,\mathrm{cm}^3/\mathrm{s}}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 5</h2>
+<p>A stone is dropped into a quiet lake and waves move in circles at a speed of 4 cm/second. At the instant when radius of the circular wave is 10 cm, how fast is the enclosed area increasing?</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\frac{dr}{dt}&=+4\,\mathrm{cm}/\mathrm{s}\\[4pt]
+	A&=\pi r^2\\[4pt]
+	\frac{dA}{dt}&=\frac{d}{dt} \pi r^2\\[4pt]
+	&=\pi \frac{d}{dt}r^2\\[4pt]
+	&=\pi\times 2r\times \frac{dr}{dt}\\[4pt]
+	&=2\pi r\times 4\\[4pt]
+	&=8\pi r\\[4pt]
+	\left.\frac{dA}{dt}\right\vert_{r=10cm}&=8\pi\times 10\\[4pt]
+	&=\underline{\underline{80\pi\,\mathrm{cm}^2/\mathrm{s}}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 6</h2>
+<p>The length of a rectangle is decreasing at the rate of 5 cm/s and the width is increasing at the rate of 4 cm/s. When length is 8 cm and width is 6 cm, find the rate of change of its area.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\frac{dx}{dt}&=-5\,\mathrm{cm}/\mathrm{s}\\[4pt]
+	\frac{dy}{dt}&=+4\,\mathrm{cm}/\mathrm{s}\\[4pt]
+	A&=xy\\[4pt]
+	\frac{dA}{dt}&=x\frac{dy}{dt}+y\frac{dx}{dt}\\[4pt]
+	&=x\times 4+y\times -5\\[4pt]
+	&=4x-5y\\[4pt]
+	\left.\frac{dA}{dt}\right\vert_{x=8,y=6}&=4\times8-5\times6\\[4pt]
+	&=32-30\\[4pt]	
+	&=\underline{\underline{2\,\mathrm{cm}^2/\mathrm{s}}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 7</h2>
+<p>Show that the function \(f(x)=3x+17\) is strictly increasing on R.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	f(x)&=3x+17\\[4pt]
+	f'(x)&=3\times1+0\\[4pt]
+	&=3\\[4pt]
+	&>0\\[4pt]
+	\therefore \text{ \(f(x)\) is strictly increasing on R}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 8</h2>
+<p>Show that the function \(f(x)=e^{2x}\) is strictly increasing on R.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	f(x)&=e^{2x}\\[4pt]
+	f'(x)&=2e^{2x}\\[4pt]
+	&=2\left(e^{x}\right)^2\\[4pt]
+	&>0\\[4pt]
+	\therefore \text{ \(f(x)\) is strictly increasing on R}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 9</h2>
+<p>Show that the function \(f(x)=x^3-3x^2+3x-100\) is strictly increasing on R.</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	f(x)&=x^3-3x^2+3x-100\\[4pt]
+	f'(x)&=3x^2-3\times2x+3\times1-0\\[4pt]
+	&=3x^2-6x+3\\[4pt]
+	&=3\left(x^2-2x+1\right)\\[4pt]
+	&=3\left(x-1\right)^2\\[4pt]
+	&>0\\[4pt]
+	\therefore \text{ \(f(x)\) is strictly increasing on R}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 9</h2>
+<p>Find the points of local minima and minimum values of the function \(f\) give by \(f(x)=9x^2+12x+2\).</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	f(x)&=9x^2+12x+2\\[4pt]
+	f'(x)&=9\times2x+12\times1+0\\[4pt]
+	&=18x+12\\[4pt]
+	f'(x)&=0\\[4pt]
+	18x+12&=0\\[4pt]
+	18x&=-12\\[4pt]
+	x&=\frac{-12}{18}\\[4pt]
+	x&=\frac{-2}{3}\\[4pt]
+	f''(x)&=18\\[4pt]
+	&>0\\[4pt]
+	x&=\underline{\underline{\frac{-2}{3}}}\quad \text{ is a point of local minima}\\[4pt]
+	f\left(\frac{-2}{3}\right)&=9x^2+12x+2\\[4pt]
+	&=\cancel{9}\times\frac{4}{\cancel{9}}+12\times\frac{-2}{3}+2\\[4pt]
+	&=4+4\times-2+2\\[4pt]
+	&=\underline{\underline{-2}}\quad \text{ Min. Value}
+	\end{align}$$</p>    
+<hr class="major" />
+
+								</section>
 
 						</div>
 					</div>
@@ -92,18 +217,18 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">Homepage</a></li>
+										<li><a href="../../index.html">Homepage</a></li>
 										<li>
 											<span class="opener">Plustwo</span>
 											<ul>
-												<li><a href="plustwomathematics.html">Mathematics</a></li>
-												<li><a href="plustwophysics.html">Physics</a></li>
+												<li><a href="../../plustwomathematics.html">Mathematics</a></li>
+												<li><a href="../../plustwophysics.html">Physics</a></li>
 												<li><a href="#">Chemistry</a></li>
 												<!-- <li><a href="#">Feugiat Veroeros</a></li> -->
 											</ul>
 										</li>
-										<!-- <li><a href="generic.html">Mathematics</a></li>
-										<li><a href="elements.html">Physics</a></li> -->
+										<!-- <li><a href="../../generic.html">Mathematics</a></li>
+										<li><a href="../../elements.html">Physics</a></li> -->
 										<!-- <li>
 											<span class="opener">Submenu</span>
 											<ul>
