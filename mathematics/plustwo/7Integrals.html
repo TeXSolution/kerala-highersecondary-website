@@ -61,7 +61,7 @@
 <p>$$\begin{align}
 	\log x&=t\\[4pt]
 	\frac{1}{x}dx&=dt\\[4pt]
-	\int \frac{1}{x+x\log x}dx&=\int \frac{1}{x{1+\log x}}dx\\[4pt]
+	\int \frac{1}{x+x\log x}dx&=\int \frac{1}{x(1+\log x)}dx\\[4pt]
 	&=-\int\frac{dt}{1+t}\\[4pt]
 	&=\log \vert1+t\vert+c\\[4pt]
 	&=\cos t+c\\[4pt]
@@ -77,9 +77,52 @@
 	\sec^2xdx&=dt\\[4pt]
 	\int \frac{{\sec}^2x}{\sqrt{\tan^2x+4}}dx&=\int \frac{dt}{\sqrt{t^2+4}}dx\\[4pt]
 	&=\int \frac{dt}{\sqrt{t^2+2^2}}dx\\[4pt]
-	\int\frac{1}{\sqrt{x^2+a^2}}&=\log \vert x+\sqrt{x^2+a^2}\vert+c\\[4pt]
+	\int\frac{1}{\sqrt{x^2+a^2}}dx&=\log \vert x+\sqrt{x^2+a^2}\vert+c\\[4pt]
 	&=\log \vert t+\sqrt{t^2+2^2}\vert+c\\[4pt]
 	&=\underline{\underline{\log \vert \tan x+\sqrt{\tan^2x+4}\vert+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 4</h2>
+<p>$$\begin{equation}\int \frac{dx}{x^2-16}\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\int \frac{dx}{x^2-16}&=\int\frac{dx}{x^2-4^2}\\[4pt]
+	\int \frac{1}{x^2-a^2}dx&=\frac{1}{2a}\log \left\vert\frac{x-a}{x+a}\right\vert+c\\[4pt]
+	&=\underline{\underline{\frac{1}{8}\log \left\vert\frac{x-4}{x+4}\right\vert+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 5</h2>
+<p>Integrate$$\begin{equation}\int \frac{1}{x^2+2x+2}dx.\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	&=\int \frac{1}{x^2+2x+1-1+2}dx\\[4pt]
+	&=\int \frac{1}{{(x+1)}^2+1^2}dx\\[4pt]
+	\int \frac{1}{{x}^2+a^2}dx&=\frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right)+c\\[4pt]
+	x&=x+1\\[4pt]
+	a&=1\\[4pt]
+	&=\underline{\underline{\frac{1}{1}\tan^{-1}\left(\frac{x+1}{1}\right)+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 6</h2>
+<p>$$\begin{equation}\int \frac{x}{(x+1)(x+2)}dx\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\frac{x}{(x+1)(x+2)}&=\frac{A}{x+1}+\frac{B}{x+2}\\[4pt]
+	\frac{x}{\cancel{(x+1)(x+2)}}&=\frac{A(x+2)+B(x+1)}{\cancel{(x+1)(x+2)}}\\[4pt]
+	x&=A(x+2)+B(x+1)\\[4pt]
+	\text{Put }x&=-1\\[4pt]
+	-1&=A(1)\\[4pt]
+	A&=\underline{\underline{-1}}\\[4pt]
+	\text{Put }x&=-2\\[4pt]
+	-2&=B(-1)\\[4pt]
+	-1-B&=-2\\[4pt]
+	B&=\underline{\underline{2}}\\[4pt]
+	\int \frac{x}{(x+1)(x+2)}dx&=\int\frac{-1}{x+1}dx+\int\frac{2}{x+2}dx\\[4pt]
+	&=-\int\frac{1}{x+1}dx+2\int\frac{1}{x+2}dx\\[4pt]
+	&=\underline{\underline{-\log\left\vert x+1\right\vert+2\cdot \log\left\vert x+2\right\vert+c}}
 	\end{align}$$</p>    
 <hr class="major" />
 
