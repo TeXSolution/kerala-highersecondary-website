@@ -44,13 +44,13 @@
 <p>$$\begin{equation}\int \sin x \sin (\cos x)dx\end{equation}$$</p>
 <h2>Answer</h2>
 <p>$$\begin{align}
-	\cos x&=t\\[4pt]
-	-\sin xdx&=dt\\[4pt]
-	\sin xdx&=-dt\\[4pt]
-	\int \sin x \sin (\cos x)dx&=\int\sin (t)\cdot -dt\\[4pt]
-	&=-\int\sin (t)\cdot dt\\[4pt]
-	&=-{-\cos t}+c\\[4pt]
-	&=\cos t+c\\[4pt]
+	&\text{Let} \quad\color{yellow}{\cos x=t}\\[4pt]
+	&\color{yellow}{-\sin xdx=dt}\\[4pt]
+	&\color{yellow}{\sin xdx=-dt}\\[4pt]
+	\int \sin x \sin (\cos x)dx&=\int\sin (t)\cdot -dt\\[6pt]
+	&=-\int\sin (t)\cdot dt\\[6pt]
+	&=-{-\cos t}+c\\[6pt]
+	&=\cos t+c\\[6pt]
 	&=\underline{\underline{\cos (\cos x)+c}}
 	\end{align}$$</p>    
 <hr class="major" />
@@ -59,13 +59,12 @@
 <p>$$\begin{equation}\int \frac{1}{x+x\log x}dx\end{equation}$$</p>
 <h2>Answer</h2>
 <p>$$\begin{align}
-	\log x&=t\\[4pt]
-	\frac{1}{x}dx&=dt\\[4pt]
-	\int \frac{1}{x+x\log x}dx&=\int \frac{1}{x(1+\log x)}dx\\[4pt]
-	&=-\int\frac{dt}{1+t}\\[4pt]
-	&=\log \vert1+t\vert+c\\[4pt]
-	&=\cos t+c\\[4pt]
-	&=\underline{\underline{\log \vert1+\log x\vert+c}}
+	&\text{Let }\quad\color{yellow}{1+\log x=t}\\[4pt]
+	&\color{yellow}{\frac{1}{x}dx=dt}\\[4pt]
+	\int \frac{1}{x+x\log x}dx&=\int \frac{1}{x(1+\log x)}dx\\[6pt]
+	&=\int\frac{1}{t}dt\\[6pt]
+	&=\log \left\vert t\right\vert+c\\[6pt]
+	&=\underline{\underline{\log \left\vert1+\log x\right\vert+c}}
 	\end{align}$$</p>    
 <hr class="major" />
 
@@ -73,8 +72,8 @@
 <p>$$\begin{equation}\int \frac{{\sec}^2x}{\sqrt{\tan^2x+4}}dx\end{equation}$$</p>
 <h2>Answer</h2>
 <p>$$\begin{align}
-	\tan x&=t\\[4pt]
-	\sec^2xdx&=dt\\[4pt]
+	&\text{Let }\quad\color{yellow}{\tan x=t}\\[4pt]
+	&\color{yellow}{\sec^2xdx=dt}\\[4pt]
 	\int \frac{{\sec}^2x}{\sqrt{\tan^2x+4}}dx&=\int \frac{dt}{\sqrt{t^2+4}}dx\\[4pt]
 	&=\int \frac{dt}{\sqrt{t^2+2^2}}dx\\[4pt]
 	\int\frac{1}{\sqrt{x^2+a^2}}dx&=\log \vert x+\sqrt{x^2+a^2}\vert+c\\[4pt]
@@ -149,6 +148,57 @@
 	\color{yellow}{\log a-\log b}&\,\color{yellow}{=\log\frac{a}{b}}\\[4pt]
 	&=\frac{1}{2}\log\frac{10}{5}\\[4pt]
 	&=\underline{\underline{\frac{1}{2}\log 2}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 8</h2>
+<p>$$\begin{equation}\int \cot xdx=\ldots\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\int \cot xdx&=\underline{\underline{\log\left\vert\sin x\right\vert+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 9</h2>
+<p>$$\begin{equation}\text{Evaluate }\int \left(2x^2+5x+3\right)dx\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	\int \left(2x^2+5x+3\right)dx&=\int 2x^2dx+
+	\int5xdx+\int3dx\\[6pt]
+	&=2\int x^2dx+
+	5\int xdx+3\int dx\\[6pt]
+	&=\underline{\underline{2\frac{x^3}{3}+5\frac{x^2}{2}+3x+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 10</h2>
+<p>$$\begin{equation}\text{Find }\int \frac{e^{\tan^{-1}x}}{1+x^2}dx\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	&\text{Let }\quad\color{yellow}{t=\tan^{-1}x}\\[4pt]
+	&\color{yellow}{\frac{dt}{dx}=\frac{1}{1+x^2}}\\[4pt]
+	&\color{yellow}{dt=\frac{dx}{1+x^2}}\\[4pt]
+	\int \frac{e^{\tan^{-1}x}}{1+x^2}dx&=\int e^t\cdot dt\\[6pt]
+	&=e^t+c\\[6pt]
+	&=\underline{\underline{e^{\tan^{-1}x}+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+
+<h2>Question 11</h2>
+<p>$$\begin{align}&(\text{i})\quad\int \frac{dx}{x^2+a^2}=\ldots\\[6pt]
+&(\text{ii})\quad \text{Evaluate }\int\frac{dx}{x^2-6x+7}	
+\end{align}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{equation}(\text{i})\quad\int \frac{dx}{x^2+a^2}=\frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right)+c\end{equation}$$</p>
+<p>(ii) $$\begin{align}
+	&\color{yellow}{x^2-6x-7=x^2-6x+3^2-7-3^2}\\[4pt]
+	&\color{yellow}{={\underbrace{x^2-6x+3^2}_{(x-3)^2}}-7-9}\\[4pt]
+	&\color{yellow}{(x-3)^2-16}\\[4pt]
+	&\color{yellow}{(x-3)^2-4^2}\\[4pt]
+	&\color{yellow}{\int\frac{dx}{x^2-a^2}=\frac{1}{2a}\log{\left\vert \frac{x-a}{x+a}\right\vert}+c}\\[4pt]
+	\int\frac{dx}{(x-3)^2-4^2}&=\frac{1}{2\times4}\log{\left\vert \frac{x-3-4}{x-3+4}\right\vert}+c\\[6pt]
+	&=\underline{\underline{\frac{1}{8}\log\left\vert \frac{x-7}{x+1}\right\vert+c}}
 	\end{align}$$</p>    
 <hr class="major" />
 
