@@ -92,7 +92,7 @@ body {
 /* Type */
 body, input, select, textarea {
   color: white;
-  font-family: "Latin Modern Math", serif;
+  font-family: 'Lora', serif;
   font-size: 13pt;
   font-weight: 400;
   background-color: black;
