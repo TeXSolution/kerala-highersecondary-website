@@ -538,9 +538,22 @@
 <h2>Answer</h2>
 <p>$$\begin{align}
 	&=\int \frac{1-\cos^2x}{(1+\cos x)^2}dx\\[4pt]
+	&\text{Using the Pythagorean identity:}\\[4pt]
+	&\color{yellow}{\sin^2x=1-\cos^2 x}\\[4pt]
+	&\color{yellow}{a=1}\\[4pt]
+	&\color{yellow}{b=\cos x}\\[4pt]
+	&\color{yellow}{a^2-b^2=(a-b)(a+b)}\\[4pt]
+	&\color{yellow}{1^2-\cos^2x=(1-\cos x)(1+\cos x)}\\[4pt]
 	&=\int \frac{(1-\cos x)(\cancel{1+\cos x})}{(1+\cos x)^{\cancel{2}}}dx\\[4pt]
-	&=\int \frac{2\sin^2\frac{x}{2}}{2\cos^2\frac{x}{2}}dx\\[4pt]
+	&\text{Using a half-angle identity:}\\[4pt]
+	&\color{yellow}{1-\cos x=2\sin^2\frac{x}{2}}\\[4pt]
+	&\color{yellow}{1+\cos x=2\cos^2\frac{x}{2}}\\[4pt]
+	&=\int \frac{\cancel{2}\sin^2\frac{x}{2}}{\cancel{2}\cos^2\frac{x}{2}}dx\\[4pt]
+	&\text{In terms of sine and cosine:}\\[4pt]
+	&\color{yellow}{\tan^2x=\frac{\sin^2x}{\cos^2x}}\\[4pt]
 	&=\int\tan^2\frac{x}{2}dx\\[4pt]
+	&\text{Using the Pythagorean identity:}\\[4pt]
+	&\color{yellow}{\tan^2x=\sec^2x-1}\\[4pt]
 	&=\int(\sec^2\frac{x}{2}-1)dx\\[4pt]
 	&=\underline{\underline{2\tan \frac{x}{2}-x+c}}
 	\end{align}$$</p>    
