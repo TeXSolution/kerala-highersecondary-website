@@ -509,10 +509,10 @@
 <h2>Answer</h2>
 <p>$$\begin{align}
 	&=\int\frac{x^4-1+1}{x^2+1}dx\\[4pt]
+	&=\int\frac{(x^2)^2-1^2+1}{x^2+1}dx\\[4pt]
 	&\color{yellow}{x^4-1=(x^2)^2+1^2}\\[4pt]
 	&\color{yellow}{a^2-b^2=(a-b)(a+b)}\\[4pt]
 	&=\int\left(\frac{(x^2-1)(\cancel{x^2+1})}{\cancel{x^2+1}}+\frac{1}{x^2+1}\right)dx\\[4pt]
-	&=\int dx+\int\frac{dx}{x^2+1}\\[4pt]
 	&\color{yellow}{\int \frac{1}{{1+x^2}}dx=\tan^{-1}x+c}\\[4pt]
 	&=\underline{\underline{\frac{x^3}{3}-x+\tan^{-1}x+c}}
 	\end{align}$$</p>    
@@ -529,6 +529,20 @@
 	&\color{yellow}{\frac{1}{\cos x}=\sec x}\\[4pt]
 	&=\int \sec^2xdx\\[4pt]
 	&=\underline{\underline{\tan x+c}}
+	\end{align}$$</p>    
+<hr class="major" />
+
+<h2>Question 45</h2>
+<p>$$\begin{equation}\int \frac{\sin^2x}{(1+\cos x)^2}dx
+\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	&=\int \frac{1-\cos^2x}{(1+\cos x)^2}dx\\[4pt]
+	&=\int \frac{(1-\cos x)(\cancel{1+\cos x})}{(1+\cos x)^{\cancel{2}}}dx\\[4pt]
+	&=\int \frac{2\sin^2\frac{x}{2}}{2\cos^2\frac{x}{2}}dx\\[4pt]
+	&=\int\tan^2\frac{x}{2}dx\\[4pt]
+	&=\int(\sec^2\frac{x}{2}-1)dx\\[4pt]
+	&=\underline{\underline{2\tan \frac{x}{2}-x+c}}
 	\end{align}$$</p>    
 <hr class="major" />
 
