@@ -571,6 +571,44 @@
 	\end{align}$$</p>    
 <hr class="major" />
 
+<h2>Question 47</h2>
+<p>$$\begin{equation}\text{Find }\int \frac{x^2+1}{x^2-5x+6}dx
+\end{equation}$$</p>
+<h2>Answer</h2>
+<p>$$\begin{align}
+	&=\int \frac{x^2-5x+6+5x-6+1}{x^2-5x+6}dx\\[4pt]
+	&=\int \frac{\cancel{x^2-5x+6}}{\cancel{x^2-5x+6}}+\frac{5x-5}{x^2-5x+6}dx\\[4pt]
+	&=\int 1+\frac{5x-5}{x^2-5x+6}dx\\[4pt]
+	&\frac{5x-5}{(x-2)(x-3)}=\frac{A}{x-2}+\frac{B}{x-3}\\[4pt]
+	&\frac{5x-5}{(x-2)(x-3)}=\frac{A}{\cancel{x-2}}(\cancel{x-2})(x-3)+\frac{B}{\cancel{x-3}}(x-2)(\cancel{x-3})\\[4pt]
+	&5x-5=A(x-3)+B(x-2)\\[4pt]
+	&5x-5=Ax-3A+Bx-2B\\[4pt]
+	&5x-5=Ax+Bx-3A-2B\\[4pt]
+	&5x - 5 = (A + B)x - (3A + 2B)\\[4pt]
+	&A + B = 5\tag{1}\\[4pt] 
+	&-3A - 2B = -5\tag{2}\\[4pt]
+	&\frac{5x - 5}{(x - 2)(x - 3)} = \frac{-5}{x - 2} + \frac{10}{x - 3}\\[4pt]
+	&\int \frac{x^2 + 1}{x^2 - 5x + 6} \, dx = \int 1 \, dx + \int \frac{-5}{x - 2} \, dx + \int \frac{10}{x - 3} \, dx\\[4pt]
+	&=\boxed{x-5\log\vert x-2\vert+10\log\vert x-3\vert+c}
+	\end{align}$$</p> 
+	From \(A + B = 5\), \(B = 5 - A\). Substitute into the second equation:
+\[
+-3A - 2(5 - A) = -5,
+\]
+\[
+-3A - 10 + 2A = -5,
+\]
+\begin{align}
+-A &= 5 \\[4pt] 
+A &= \color{yellow}{-5}.
+\end{align}
+Then:
+\begin{align}
+B &= 5 - (-5) \\[4pt]
+B&= \color{yellow}{10}
+\end{align}
+<hr class="major" />
+
 								</section>
 
 						</div>
