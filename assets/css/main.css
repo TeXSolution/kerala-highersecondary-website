@@ -2274,3 +2274,46 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Question Section */
+.question {
+  margin-bottom: 50px;
+}
+
+/* Button Styles */
+.next-button {
+  display: inline-block;
+  /* padding: 10px 20px; */
+  font-size: 16px;
+  color: white;
+  background-color: #0b0c0c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: 20px auto 0;
+}
+
+.next-button:hover {
+  background-color: #ecf3fa;
+}
+
+.next-button:active {
+  transform: scale(0.95);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .next-button {
+      width: 100%;
+      /* padding: 15px; */
+      font-size: 18px;
+  }
+}

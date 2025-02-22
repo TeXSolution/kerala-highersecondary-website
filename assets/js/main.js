@@ -3,6 +3,22 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+function showNext(next, button) {
+    // Make the next question visible
+    const nextQuestion = document.getElementById(`q${next}`);
+    if (nextQuestion) {
+        nextQuestion.style.display = 'block';
+    }
+
+    // Hide the current "Next" button
+    button.style.display = 'none';
+
+    // Check if it's the final question
+    if (!document.getElementById(`q${next + 1}`)) {
+        // No further question exists; no "Next" button will be shown
+        console.log("No more questions.");
+    }
+}
 
 (function($) {
 

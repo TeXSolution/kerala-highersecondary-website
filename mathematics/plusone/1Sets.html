@@ -38,75 +38,123 @@
 									<header class="main">
 										<h1>Chapter 1 Sets</h1>
 									</header>
+									<div id="q1" class="question">
+										<h2>Question 1</h2>
+										<p>If \(\mathrm{A}=\{x: x \text{ is a natural number}, x \text{ is a prime number less than }30\}\), Write A is roster form</p>
+									
+										<h2>Answer</h2>
+										<p>\(\mathrm{A}=\{2,3,5,7,11,13,17,19,23,29\}\)</p><br>
+										<button class="next-button" onclick="showNext(2, this)">Next</button>
+										<hr class="major" />
+    								</div>
+									
+									<div id="q2" class="question" style="display: none;">
+									<h2>Question 2</h2>
+									<p>Write the set \(x: x \text{ is a positive integer and } x^2< 40\) in the roster form.</p>
+									<h2>Answer</h2>
+									<p>\(\mathrm{A}=\{1,2,3,4,5,6,7\}\)</p><br>
+										<button class="next-button" onclick="showNext(3, this)">Next</button>
+										<hr class="major" />
+    								</div>
 
-									<h2>Question 1</h2>
-<p>Let \(\mathrm{U}=\{1,2,3,4,5,6\}\), \(\mathrm{A}=\{2,3\}\), \(\mathrm{B}=\{3,4,5\}\)</p>
-<p><ol>
-<li>Find \(\mathrm{A}',\mathrm{B}'\)</li>
-<li>Find \(\mathrm{A}\cup\mathrm{B},\mathrm{A}\cap\mathrm{B}\)</li>
-<li>Show that \((\mathrm{A}\cup\mathrm{B})'=\mathrm{A}'\cap\mathrm{B}'\)</li>
-</ol></p>
+									<div id="q3" class="question" style="display: none;">
+										<h2>Question 3</h2>
+										<p>Write the set \(\mathrm{A}=\{1,4,9,16,25,\ldots\}\) in set-builder form.</p>
+										<h2>Answer</h2>
+										<p>\(\mathrm{A}=\{x: x=n^2, n\in \mathbb{N}\}\)</p><br>
+											<button class="next-button" onclick="showNext(4, this)">Next</button>
+											<hr class="major" />
+										</div>
 
-<h2>Answer</h2>
-<p><ol>
-	<li>$$\begin{align}
-	\mathrm{A}'&=\mathrm{U}-\mathrm{A}\\[6pt]
-	\mathrm{A}'&=\underline{\underline{\{1,4,5,6\}}}\\[6pt]
-	\mathrm{B}'&=\mathrm{U}-\mathrm{B}\\[6pt]
-	\mathrm{B}'&=\underline{\underline{\{1,2,6\}}}
-	\end{align}$$</li>
-	<li>$$\begin{align}
-	\mathrm{A}\cup\mathrm{B}&=\underline{\underline{\{2,3,4,5\}}}\\[6pt]
-	\mathrm{A}\cap\mathrm{B}&=\underline{\underline{\{3\}}}
-	\end{align}$$</li>
-	<li>LHS<br>$$\begin{align}
-	(\mathrm{A}\cup\mathrm{B})'&=\mathrm{U}-(\mathrm{A}\cup \mathrm{B})\\[6pt]
-	&=\{1,6\}
-	\end{align}$$
-	RHS<br>$$\begin{align}
-	\mathrm{A}'\cap\mathrm{B}'&=\{1,6\}\\[6pt]
-	LHS&=RHS
-	\end{align}$$
-	</li>
-	Hence verified.
-	</ol</p>
-<hr class="major" />
+										<div id="q4" class="question" style="display: none;">
+											<h2>Question 4</h2>
+											<p>Let \(\mathrm{A}=\{x\colon x \text{ is a natural number less than 3}\}\)
+											<br>(a) Represent	the set A in roster form. (1)<br>
+												(b) Write all subsets of A. (2)</p>
+											<h2>Answer</h2>
+											<p>(a) \(\mathrm{A}=\{1,2\}\)<br>
+												(b) \(\phi, \{1\}, \{2\}, \{1,2\}\)</p><br>
+												<button class="next-button" onclick="showNext(5, this)">Next</button>
+												<hr class="major" />
+											</div>
 
-<h2>Question 2</h2>
-<p><ol>
-	<li>If \(\mathrm{A}=\{1,2,3\}\) and \(\mathrm{B}=\{1,4\}\), then the number of subsets A \(\times\) B is</li>
-	<ol>
-	<li>\(5^2\)</li>
-	<li>\(6^2\)</li>
-	<li>\(2^5\)</li>
-	<li>\(2^6\)</li>
-	</ol>
-	<li>If \(\left(\frac{x}{3}+1,y-\frac{2}{3}\right)=\left(-\frac{2}{3},\frac{2}{3}\right)\), then find \(x\) and \(y\)</li>
-	</ol></p>
-<h2>Answer</h2>
-<p><ol>
-	<li>$$\begin{align}
-	\text{number of subset}&=2^n\\[6pt]
-	\text{number of subset of } \mathrm{A}\times\mathrm{B}&=2^{n(\mathrm{A})\times{n(\mathrm{B})}}\\[6pt]
-	&=2^{3\times2}\\[6pt]
-	&=\underline{\underline{2^{6}}}
-	\end{align}$$
-	</li>
-	<li>$$\begin{align}
-	\frac{x}{3}+1&=-\frac{2}{3}\\[6pt]
-	\frac{x}{3}&=-\frac{2}{3}-1\\[6pt]
-	\frac{x}{3}&=\frac{-2-3}{3}\\[6pt]
-	\frac{x}{\cancel{3}}&=\frac{-5}{\cancel{3}}\\[6pt]
-	x&=\underline{\underline{-5}}\\[6pt]
-	y-\frac{2}{3}&=\frac{2}{3}\\[6pt]
-	y&=\frac{2}{3}+\frac{2}{3}\\[6pt]
-	y&=\underline{\underline{\frac{4}{3}}}
-	\end{align}$$</li>
-	</ol></p>
+											<div id="q5" class="question" style="display: none;">
+												<h2>Question 5</h2>
+												<p>Consider the set \(\mathrm{A}=\{x\colon x \text{ is an integer}, 0\leq x \leq 4\}\)
+													<br>Write A in roster form
+												</p>
+												<h2>Answer</h2>
+												<p>\(\mathrm{A}=\{0,1,2,3\}\)</p><br>
+													<button class="next-button" onclick="showNext(6, this)">Next</button>
+													<hr class="major" />
+												</div>
 
-<hr class="major" />
+												<div id="q6" class="question" style="display: none;">
+													<h2>Question 6</h2>
+													<p>\(\mathrm{A}=\{x\vert x \text{ is a prime number}, x\leq6\}\)
+														<br>Write A in roster form.
+													</p>
+													<h2>Answer</h2>
+													<p>\(\mathrm{A}=\{2,3,5\}\)</p><br>
+														<button class="next-button" onclick="showNext(7, this)">Next</button>
+														<hr class="major" />
+													</div>
 
-<h2>Question 3</h2>
+													<div id="q7" class="question" style="display: none;">
+														<h2>Question 7</h2>
+														<p>If the number of proper subsets of a set is 63, find the number of elements in the set</p>
+														<h2>Answer</h2>
+														<p>$$\begin{align}
+															2^n-1&=63\\[4pt]
+															2^n&=63+1\\[4pt]
+															2^n&=64\\[4pt]
+															2^n&=2^6\\[4pt]
+															n&=\underline{\underline{6}}
+															\end{align}$$</p><br>
+															<button class="next-button" onclick="showNext(8, this)">Next</button>
+															<hr class="major" />
+														</div>
+
+														<div id="q8" class="question" style="display: none;">
+															<h2>Question 8</h2>
+															<p></p>
+															<h2>Answer</h2>
+															<p><br>
+																<button class="next-button" onclick="showNext(9, this)">Next</button>
+																<hr class="major" />
+															</div>
+
+															<div id="q9" class="question" style="display: none;">
+																<h2>Question 9</h2>
+																<p></p>
+																<h2>Answer</h2>
+																<p><br>
+																	<button class="next-button" onclick="showNext(10, this)">Next</button>
+																	<hr class="major" />
+																</div>
+
+																<div id="q10" class="question" style="display: none;">
+																	<h2>Question 10</h2>
+																	<p></p>
+																	<h2>Answer</h2>
+																	<p><br>
+																		<button class="next-button" onclick="showNext(11, this)">Next</button>
+																		<hr class="major" />
+																	</div>
+									<script>
+										function showNext(next, button) {
+											// Make the next question visible
+											const nextQuestion = document.getElementById(`q${next}`);
+											if (nextQuestion) {
+												nextQuestion.style.display = 'block';
+											}
+								
+											// Hide the current "Next" button
+											button.style.display = 'none';
+										}
+									</script>
+
+<!-- <h2>Question 3</h2>
 <p>Find the solution set of the equation \( x^2 + x - 2 = 0 \) in roster form.</p>
 <h2>Answer</h2>
 <p>To solve the equation \( x^2 + x - 2 = 0 \) using the quadratic formula, we use:
@@ -529,9 +577,9 @@ Proper subsets are all subsets except the set itself. Therefore, the number of p
 ### Summary of Results<br>
 
 - **(a)**: The set \( A \) in roster form is \( \{1, 2, 3\} \).<br>
-- **(b)**: The number of proper subsets of \( A \) is \( 7 \).</p>
+- **(b)**: The number of proper subsets of \( A \) is \( 7 \).</p> -->
 
-<hr class="major" />
+<!-- <hr class="major" /> -->
 
 								</section>
 
