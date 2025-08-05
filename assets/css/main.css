@@ -1,5 +1,5 @@
 @import url(fontawesome-all.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,600italic|Roboto+Slab:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Schoolbell&display=swap");
 /*
 	Editorial by HTML5 UP
 	html5up.net | @ajlkn
@@ -91,11 +91,16 @@ body {
 
 /* Type */
 body, input, select, textarea {
+  background-image: url('../../images/blackboard.jpg'); /* Replace with your actual image path */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
   color: white;
-  font-family: 'Lora', serif;
+  font-family: 'Schoolbell', cursive;
   font-size: 13pt;
   font-weight: 400;
-  background-color: black;
+  /* background-color: #2f4f4f; */
   line-height: 1.65; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
@@ -2276,7 +2281,7 @@ button,
     padding-top: 0; }
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Schoolbell', cursive;
   margin: 20px;
   padding: 0;
   box-sizing: border-box;
