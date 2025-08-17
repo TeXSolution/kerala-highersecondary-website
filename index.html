@@ -10,6 +10,41 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			body {
+			  transition: background 0.3s ease, color 0.3s ease;
+			  font-family: Arial, sans-serif;
+			  padding: 20px;
+			}
+		
+			/* Themes */
+			.black-theme {
+			  background: black;
+			  color: white;
+			}
+			.yellow-theme {
+			  background: yellow;
+			  color: black;
+			}
+			.white-theme {
+			  background: white;
+			  color: black;
+			}
+		
+			/* Buttons */
+			.color-btn {
+			  padding: 10px 20px;
+			  margin: 5px;
+			  border: none;
+			  border-radius: 8px;
+			  cursor: pointer;
+			  font-size: 16px;
+			  font-weight: bold;
+			}
+			.black-btn { background: black; color: white; }
+			.yellow-btn { background: yellow; color: black; }
+			.white-btn { background: white; color: black; border: 1px solid black; }
+		  </style>
 	</head>
 	<body class="is-preload">
 
@@ -203,11 +238,12 @@
 												<!-- <li><a href="#" class="button">Chemistry</a></li> -->
 											</ul>
 </article>
-<!-- <article>
-											<ul class="actions">
-												<li><a href="#" class="button">Computer Science</a></li>
-											</ul>
-										</article> -->
+<article>
+	<h1>Choose Your Theme</h1>
+	<button class="color-btn black-btn" onclick="setTheme('black-theme')">Black</button>
+	<button class="color-btn yellow-btn" onclick="setTheme('yellow-theme')">Yellow</button>
+	<button class="color-btn white-btn" onclick="setTheme('white-theme')">White</button>
+										</article>
 									</div>
 								</section>
 
@@ -318,6 +354,20 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				// Apply saved theme on page load
+				document.addEventListener("DOMContentLoaded", () => {
+				  const savedTheme = localStorage.getItem("theme");
+				  if (savedTheme) {
+					document.body.className = savedTheme;
+				  }
+				});
+			
+				// Set theme and save in localStorage
+				function setTheme(theme) {
+				  document.body.className = theme;
+				  localStorage.setItem("theme", theme);
+				}
+			  </script>
 	</body>
 </html>

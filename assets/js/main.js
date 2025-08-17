@@ -3,6 +3,19 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+document.addEventListener("DOMContentLoaded", () => {
+	const savedTheme = localStorage.getItem("theme");
+	if (savedTheme) {
+	  document.body.className = savedTheme;
+	}
+  });
+  
+  // Set theme and save in localStorage
+  function setTheme(theme) {
+	document.body.className = theme;
+	localStorage.setItem("theme", theme);
+  }
+  
 function showNext(next, button) {
     // Make the next question visible
     const nextQuestion = document.getElementById(`q${next}`);

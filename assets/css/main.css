@@ -90,18 +90,42 @@ body {
     transition: none !important; }
 
 /* Type */
-body, input, select, textarea {
-  background-image: url('../../images/blackboard.jpg'); /* Replace with your actual image path */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
+body {
+  transition: background 0.3s ease, color 0.3s ease;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+/* Themes */
+.black-theme {
+  background: black;
   color: white;
-  font-family: 'Schoolbell', cursive;
-  font-size: 13pt;
-  font-weight: 400;
-  /* background-color: #2f4f4f; */
-  line-height: 1.65; }
+}
+
+.yellow-theme {
+  background: yellow;
+  color: black;
+}
+
+.white-theme {
+  background: white;
+  color: black;
+}
+
+/* Buttons */
+.color-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.black-btn { background: black; color: white; }
+.yellow-btn { background: yellow; color: black; }
+.white-btn { background: white; color: black; border: 1px solid black; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 11pt; } }
@@ -137,7 +161,7 @@ p {
   margin: 0 0 2em 0; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: rgb(240, 157, 185);
+  /* color: rgb(240, 157, 185); */
   font-family: "Roboto Slab", serif;
   font-weight: 700;
   line-height: 1.5;
@@ -1016,7 +1040,7 @@ form {
   margin: 0 0 2em 0; }
 
 label {
-  color: black;
+  /* color: black; */
   display: block;
   font-size: 0.9em;
   font-weight: 600;
