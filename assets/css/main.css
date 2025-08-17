@@ -112,6 +112,11 @@ body {
   color: black;
 }
 
+.red-theme {
+  background: red;
+  color: black;
+}
+
 /* Buttons */
 .color-btn {
   padding: 10px 20px;
@@ -126,6 +131,7 @@ body {
 .black-btn { background: black; color: white; }
 .yellow-btn { background: yellow; color: black; }
 .white-btn { background: white; color: black; border: 1px solid black; }
+.red-btn { background: red; color: black; }
   @media screen and (max-width: 1680px) {
     body, input, select, textarea {
       font-size: 11pt; } }
@@ -1085,6 +1091,8 @@ textarea {
   input[type="url"]:focus,
   select:focus,
   textarea:focus {
+
+
     border-color: #f56a6a;
     box-shadow: 0 0 0 1px #f56a6a; }
 

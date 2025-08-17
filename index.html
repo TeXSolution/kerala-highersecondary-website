@@ -243,6 +243,7 @@
 	<button class="color-btn black-btn" onclick="setTheme('black-theme')">Black</button>
 	<button class="color-btn yellow-btn" onclick="setTheme('yellow-theme')">Yellow</button>
 	<button class="color-btn white-btn" onclick="setTheme('white-theme')">White</button>
+	<button class="color-btn red-btn" onclick="setTheme('red-theme')">Red</button>
 										</article>
 									</div>
 								</section>
@@ -354,20 +355,5 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<script>
-				// Apply saved theme on page load
-				document.addEventListener("DOMContentLoaded", () => {
-				  const savedTheme = localStorage.getItem("theme");
-				  if (savedTheme) {
-					document.body.className = savedTheme;
-				  }
-				});
-			
-				// Set theme and save in localStorage
-				function setTheme(theme) {
-				  document.body.className = theme;
-				  localStorage.setItem("theme", theme);
-				}
-			  </script>
 	</body>
 </html>
